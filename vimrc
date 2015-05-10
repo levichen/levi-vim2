@@ -14,7 +14,8 @@ set nobomb
 set nowrap
 set hlsearch
 "set mouse=nv
-set nocp
+"set mouse=a
+"set nocp
 
 " for pathogen
 execute pathogen#infect()
@@ -67,3 +68,14 @@ let g:cssColorVimDoNotMessMyUpdatetime = 1
 " short key for tag list
 " must install tag list first 
 map <f9> :Tlist<CR>
+
+" for fuzzy finder
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+filetype plugin on  
+autocmd FileType javascrīpt set omnifunc=javascriptcomplete#CompleteJS  
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags  
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS  
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP  
+autocmd FileType c set omnifunc=ccomplete#Complete  
