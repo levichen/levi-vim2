@@ -4,7 +4,6 @@ set tabstop=4
 set expandtab
 set shiftwidth=4
 set shiftround
-set autoindent
 
 " copy to clipboard
 set clipboard=unnamed
@@ -18,7 +17,7 @@ set hlsearch
 "set nocp
 
 " for pathogen
-execute pathogen#infect()
+ execute pathogen#infect()
 
 " short key for nerdtree
 nnoremap <silent> <F5> :NERDTreeToggle<CR>
@@ -67,7 +66,7 @@ let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 " short key for tag list
 " must install tag list first 
-map <f9> :Tlist<CR>
+" map <f9> :Tlist<CR>
 
 " for fuzzy finder
 let g:ctrlp_map = '<c-p>'
