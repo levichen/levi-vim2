@@ -1,9 +1,11 @@
 syntax on
 set number
-set tabstop=4
+set tabstop=2
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 set shiftround
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " copy to clipboard
 set clipboard=unnamed
@@ -82,3 +84,4 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 
 " leader key for nerdcommenter
 let mapleader=","
+
